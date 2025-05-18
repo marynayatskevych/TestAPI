@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="MySuite">
+    <test name="API Tests" parallel="tests" thread-count="4">
+        <classes>
+            <class name="tests.VerifyHTTPStatusCode"/>
+            <class name="tests.VerifyHTTPHeader"></class>
+            <class name="tests.VerifyHTTPBody"/>
+            <class name="tests.UserCrudTests"></class>
+        </classes>
+    </test>
+</suite>
